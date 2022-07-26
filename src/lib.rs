@@ -106,10 +106,10 @@ impl<'a> Default for TextureConfig<'a> {
 
 /// A container for a bindable texture.
 pub struct Texture {
-    texture: wgpu::Texture,
-    view: wgpu::TextureView,
-    bind_group: BindGroup,
-    size: Extent3d,
+    pub texture: wgpu::Texture,
+    pub view: wgpu::TextureView,
+    pub bind_group: BindGroup,
+    pub size: Extent3d,
 }
 
 impl Texture {
@@ -306,7 +306,7 @@ pub struct Renderer {
     uniform_bind_group: BindGroup,
     /// Textures of the font atlas and all images.
     pub textures: Textures<Texture>,
-    texture_layout: BindGroupLayout,
+    pub texture_layout: BindGroupLayout,
     render_data: Option<RenderData>,
     config: RendererConfig<'static>,
 }
