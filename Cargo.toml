@@ -3,7 +3,7 @@ resolver = "2"
 
 [package]
 name = "imgui-wgpu"
-version = "0.18.0"
+version = "0.20.0"
 authors = ["Noah Hüsser <yatekii@yatekii.ch>", "Connor Fitzgerald <connorwadefitzgerald@gmail.com>", "Steven Wittens <steven@acko.net>"]
 edition = "2018"
 description = "A wgpu render backend for imgui-rs."
@@ -49,7 +49,7 @@ bytemuck = "1"
 imgui = "0.8"
 log = "0.4"
 smallvec = "1"
-wgpu = "0.12"
+wgpu = "0.13"
 
 [dev-dependencies]
 bytemuck = { version = "1.4", features = ["derive"] }
